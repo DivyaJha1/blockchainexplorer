@@ -1,17 +1,11 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+// models/index.js
 
-import './index.css';
-import App from './App';
+const Address = require('./address');
+const Transaction = require('./Transaction');
+const TokenPrice = require('./tokenPrice');
 
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
-
-
+module.exports = {
+    Address,
+    Transaction,
+    TokenPrice
+};
